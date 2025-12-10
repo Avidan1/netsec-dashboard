@@ -33,13 +33,18 @@ async def update_vendor_database():
 
 def get_vendor(mac_address):
     """
-    Helper function to resolve MAC address to Vendor name with Debugging.
+    Resolves MAC address to Vendor.
+    Detects if the MAC is a locally administered (private/randomized) address.
     """
+    first_octet = int(mac_address.split(":")[0], 16)
+    is_private = (first_octet & 0b00000010) != 0
+
+    if is_private:
+        return "Private Device (Randomized MAC)"
+
     try:
-        vendor = mac_lookup.lookup(mac_address)
-        return vendor
-    except Exception as e:
-        print(f"DEBUG: Failed lookup for MAC: {mac_address}. Error: {str(e)}")
+        return mac_lookup.lookup(mac_address)
+    except:
         return "Unknown Device"
 
 def scan_network(ip_range):
