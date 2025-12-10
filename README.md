@@ -33,9 +33,9 @@ The application follows a classic Client-Server architecture:
 
 - [x] **Fast ARP Scanning:** Discover all devices on the local network (LAN) in seconds.
 - [x] **Vendor Identification:** Automatic resolution of MAC addresses to Manufacturer names (Apple, Intel, Espressif, etc.).
-- [x] **Modern Dashboard:** Dark-mode UI with real-time status indicators.
+- [x] **Modern Dashboard:** Dark/Light modes UI with real-time status indicators.
 - [ ] **Traffic Sniffing:** (Coming Soon) Analyze HTTP/DNS headers.
-- [ ] **MITM Capability:** (Coming Soon) ARP Spoofing for traffic interception (Ethical use only).
+- [x] **MITM Capability:** ARP Spoofing for traffic interception (Ethical use only).
 - [ ] **Wi-Fi Defense:** (Coming Soon) De-authentication detection and prevention.
 
 ## 🚀 Installation & Setup
