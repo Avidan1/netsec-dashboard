@@ -7,7 +7,7 @@
 ![React](https://img.shields.io/badge/Frontend-React%20%7C%20TailwindCSS-green)
 
 ## 📖 Overview
-`![Dashboard Screenshot](./screenshot/dashboard.png)`
+`![Dashboard Screenshot](./screenshots/dashboard.png)`
 
 **Network Sentry** is a security research project aimed at demystifying low-level network protocols. It combines a high-performance Python backend (utilizing **Scapy** for raw packet manipulation) with a modern React frontend to visualize network traffic and connected devices.
 
